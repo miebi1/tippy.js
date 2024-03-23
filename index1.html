@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tippy.js Example</title>
     <!-- Tippy CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<body class="bg-gray-100 h-screen flex items-center justify-center">
+  <body class="bg-gray-100 h-screen flex items-center justify-center">
     <div class="p-8 bg-white rounded-lg shadow-md">
-        <button id="tooltipButton" class="px-4 py-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600">Hover
-            Me</button>
+      <button
+        id="tooltipButton"
+        class="px-4 py-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600"
+      >
+        Hover Me
+      </button>
     </div>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
 
     <script>
-        // Initialize Tippy.js for tooltip
-        tippy('#tooltipButton', {
-            content: 'This is a tooltip example using Tippy.js',
-            placement: 'bottom', // Set tooltip placement
-            animation: 'scale', // Add animation effect
-            theme: 'light', // Use light theme
-            arrow: false, // Disable the arrow
-            offset: [0, 10], // Adjust tooltip position
-            minWidth: 200, // Set minimum width for tooltip
-        });
+      // Initialize Tippy.js for tooltip
+      tippy("#tooltipButton", {
+        content: "This is a tooltip example using Tippy.js",
+        placement: "bottom", // Set tooltip placement
+        animation: "scale", // Add animation effect
+        theme: "light", // Use light theme
+        arrow: false, // Disable the arrow
+        offset: [0, 10], // Adjust tooltip position
+        minWidth: 200, // Set minimum width for tooltip
+      });
     </script>
-</body>
-
+  </body>
 </html>
